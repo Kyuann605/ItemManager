@@ -1,0 +1,36 @@
+For backend
+
+How do i setup
+
+1. cd to the backend folder
+2. npm install
+3. then because my window is in restricted mode so it cannot run script, change from the windows powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+4. then i will need to compile my typescript file to javascript using 'tsc'
+5. then it says 'dotenv' is not recognized as an internal or external command,
+operable program or batch file.
+6. went to stackoverflow 
+https://stackoverflow.com/questions/61407393/while-running-the-script-throws-cannot-find-module-dotenv
+7. add a line of command npm install -g dotenv-cli
+8. tada it works for backend
+9. need to npm install zod
+10. need to npm install mysql2 for sql connection
+
+
+For frontend
+
+1. is just npm install
+2. npm install axios react-router-dom
+3. npm run dev that is it
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+
+index.css and App.css all clear out and write
+@import "tailwindcss"
