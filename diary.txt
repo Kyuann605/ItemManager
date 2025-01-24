@@ -12,9 +12,8 @@ operable program or batch file.
 6. went to stackoverflow 
 https://stackoverflow.com/questions/61407393/while-running-the-script-throws-cannot-find-module-dotenv
 7. add a line of command npm install -g dotenv-cli
-8. tada it works for backend
-9. need to npm install zod
-10. need to npm install mysql2 for sql connection
+8. need to npm install zod
+9. need to npm install mysql2 for sql connection
 
 
 For frontend
